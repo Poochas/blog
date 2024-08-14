@@ -1,21 +1,21 @@
 # Site settings
-title: PHOTORAMA
+title: PhotoBlog
 email: ""
-description: "Photo Journal"
+description: "PhotoBlog"
 url: "https://poochas.github.io"
 baseurl: "/blog"
-facebook_username: ""
-twitter_username: ""
-instagram_username: ""
-github_username:  ""
-deviantart_username: ""
-flickr_username: ""
-discus_shortname: ""
-share: true
+#facebook_username: ""
+#twitter_username: ""
+#instagram_username: ""
+#github_username:  ""
+#deviantart_username: ""
+#flickr_username: ""
+#discus_shortname: ""
+#share: true
 
 # Owner/author information
 owner:
-  name:   photorama
+  name:   PhotoBlog
   avatar: avatar.png
   favicon: favicon.ico
   info: photography website template
@@ -34,8 +34,8 @@ comments :
 # Internal nav
 nav:
   - GALLERY: "https://poochas.github.io/blog/gallery/"  
-  - JOURNAL: "https://poochas.github.io/blog/journal/"
-  - ABOUT: "https://poochas.github.io/blog/about/"
+  #- JOURNAL: "https://poochas.github.io/blog/journal/"
+  #- ABOUT: "https://poochas.github.io/blog/about/"
 
 # All translation keys
 translations:
