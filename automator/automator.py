@@ -46,7 +46,7 @@ def yaml_insert(abbr, archive_path, gallery_path, files, index, inputs):
                     for j,element in enumerate(files):
                         lineArr.insert(pos,  " - image_path: " + archive_path + "/" + element)
                         lineArr.insert(pos+1,"   caption: " + abbr + " " + str(j + int(index)))
-                        lineArr.insert(pos+2,"   copyright: © J.J. Phelan")
+                        lineArr.insert(pos+2,"   copyright: Pucas")
                         pos += 3
                     break
             fin.close()
@@ -90,7 +90,7 @@ def yaml_insert(abbr, archive_path, gallery_path, files, index, inputs):
                     for j,element in enumerate(files):
                         lineArr.insert(pos,  " - image_path: " + archive_path + "/" + element)
                         lineArr.insert(pos+1,"   caption: " + abbr + " " + str(j + int(index)))
-                        lineArr.insert(pos+2,"   copyright: © J.J. Phelan")
+                        lineArr.insert(pos+2,"   copyright: Pucas")
                         pos += 3
                     break
             fin.close()
@@ -112,7 +112,7 @@ def create_new(inputs):
 def add_to_new(inputs):
     # Grab all the filenames from the selected directory
     img_files = next(os.walk(inputFolderName), (None, None, []))[2]  # [] if no file
-
+    new_img = []
     # Compress the input images and put them in their correct dest directories 
     for image in img_files:
         try:
@@ -123,6 +123,7 @@ def add_to_new(inputs):
             # Copy the thumbnail to albums too
             if img_path == thumbnailName:
                 img.save('../gallery/albums/' + image_name + '.webp', 'webp', optimize=True, quality=inputs['quality'])
+                new_img.append(image_name + '.webp')
         except:
             print('Error opening ' + image + ', dropping it from processing')
 
@@ -138,7 +139,7 @@ def add_to_new(inputs):
                     gallery_path = '../gallery/' + folder
                     abbrev = inputs['thumbnailAbbrv']
                     index = 1
-                    yaml_insert(abbrev, '/gallery/archive/' + inputs['archiveName'] , gallery_path, img_files, index, inputs)
+                    yaml_insert(abbrev, '/gallery/archive/' + inputs['archiveName'] , gallery_path, new_img, index, inputs)
                     inserted = 1
         if not inserted:
             print("Make a valid selection.")
