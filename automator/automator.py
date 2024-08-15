@@ -123,7 +123,7 @@ def add_to_new(inputs):
             # Copy the thumbnail to albums too
             if img_path == thumbnailName:
                 img.save('../gallery/albums/' + image_name + '.webp', 'webp', optimize=True, quality=inputs['quality'])
-                new_img.append(image_name + '.webp')
+            new_img.append(image_name + '.webp')    
         except:
             print('Error opening ' + image + ', dropping it from processing')
 
