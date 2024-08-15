@@ -70,7 +70,7 @@ images:
             </header>
             <figcaption class="gallery-caption">
               <div class="entry-summary">
-                <!-- <h3>{{image.caption}}</h3> -->
+                <h3>{{image.caption}}</h3>
                 <p>{{image.copyright}}</p>
               </div>
             </figcaption>
@@ -113,7 +113,8 @@ images:
           image: {
             titleSrc: function (item) {
               return (
-                item.el.attr("title") + "&nbsp;" + item.el.attr("data-caption")
+                // item.el.attr("title") + "&nbsp;" +
+                item.el.attr("data-caption")
               );
             },
           },
