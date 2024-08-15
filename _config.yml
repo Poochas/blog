@@ -1,9 +1,9 @@
 # Site settings
-title: PHOTORAMA
+title: PhotoBlog
 email: ""
-description: "Photo Journal"
-url: "https://sunbliss.github.io"
-baseurl: "/photorama"
+description: "PhotoBlog"
+url: "https://poochas.github.io"
+baseurl: "/blog"
 facebook_username: ""
 twitter_username: ""
 instagram_username: ""
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://sunbliss.github.io/photorama/gallery/"  
-  - JOURNAL: "https://sunbliss.github.io/photorama/journal/"
-  - ABOUT: "https://sunbliss.github.io/photorama/about/"
+  - GALLERY: "https://poochas.github.io/photorama/gallery/"  
+ # - JOURNAL: "https://poochas.github.io/photorama/journal/"
+ # - ABOUT: "https://poochas.github.io/photorama/about/"
 
 # All translation keys
 translations:
