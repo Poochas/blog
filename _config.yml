@@ -4,14 +4,14 @@ email: ""
 description: "PhotoBlog"
 url: "https://poochas.github.io"
 baseurl: "/blog"
-facebook_username: ""
-twitter_username: ""
-instagram_username: ""
-github_username:  ""
-deviantart_username: ""
-flickr_username: ""
-discus_shortname: ""
-share: true
+#facebook_username: ""
+#twitter_username: ""
+#instagram_username: ""
+#github_username:  ""
+#deviantart_username: ""
+#flickr_username: ""
+#discus_shortname: ""
+share: false
 
 # Owner/author information
 owner:
@@ -33,7 +33,7 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://poochas.github.io/photorama/gallery/"  
+  - GALLERY: "https://poochas.github.io/blog/gallery/"  
  # - JOURNAL: "https://poochas.github.io/photorama/journal/"
  # - ABOUT: "https://poochas.github.io/photorama/about/"
 
