@@ -67,7 +67,13 @@ a:focus {
   text-shadow: none;
   text-decoration: underline;
 }
-
+.navbar {
+  transition: all, 0.5s;
+}
+.navbar-scrolled {
+  background-color: rgb(240, 237, 228);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 10px;
+}
 .intro-header {
   background: rgb(240, 237, 228);
   background: linear-gradient(
