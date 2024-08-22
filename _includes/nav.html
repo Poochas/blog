@@ -1,31 +1,71 @@
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top" style="margin-right:1em; z-index: 1;">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <i class="fa fa-bars fa-lg"></i>
-            </button>
-            <a href="{{ site.baseurl }}/" title="HOME"><img src="{{ site.baseurl }}/logo.png" alt="logo" style="width:150px;cursor:pointer;margin-top:15px;"/></a>
-        </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right" style="margin-right:1em; text-shadow: -.025em -.025em 0 rgba(0, 133, 161, 0.75), .025em -.025em 0 rgba(0, 133, 161, 0.75), -.025em .025em 0 rgba(0, 133, 161, 0.75), .025em .025em 0 rgba(0, 133, 161, 0.75);">
-               {% for nav_hash in site.nav %}
-          {% for nav_item in nav_hash %}
-            {% assign lowercase_nav_item = nav_item[0] | downcase %}
-            {% if page.active == lowercase_nav_item %}
-              <li class="active"><a href="{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
+<nav class="navbar navbar-expand-md fixed-top navbar-light text-center" id="navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ site.baseurl }}/"><img
+      class="img-responsive"
+      src="{{ site.baseurl }}/logo.png"
+      alt="logo"
+      style="max-width: 50%;cursor: pointer; margin-top: 5px"
+  /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="offcanvas offcanvas-end w-25"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header text-dark">
+        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>  
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-grow-1 pe-3 justify-content-end">
+          {% for nav_hash in site.nav %} {% for nav_item in nav_hash %} {% assign
+            lowercase_nav_item = nav_item[0] | downcase %} {% if page.active ==
+            lowercase_nav_item %}
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ nav_item[0] }}">{{ nav_item[0] }}</a>
+            </li>
             {% else %}
-              <li><a href="{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
-                            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+            <li class="nav-item"><a class="nav-link" href="{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
+            {% endif %} {% endfor %} {% endfor %}
+          
+      </div>
     </div>
-    <!-- /.container -->
+  </div>
 </nav>
+<!-- <ul
+        class="nav navbar-nav navbar-right"
+        style="
+          margin-right: 1em;
+          text-shadow: -0.025em -0.025em 0 rgba(0, 133, 161, 0.75),
+            0.025em -0.025em 0 rgba(0, 133, 161, 0.75),
+            -0.025em 0.025em 0 rgba(0, 133, 161, 0.75),
+            0.025em 0.025em 0 rgba(0, 133, 161, 0.75);
+        "
+      >
+        {% for nav_hash in site.nav %} {% for nav_item in nav_hash %} {% assign
+        lowercase_nav_item = nav_item[0] | downcase %} {% if page.active ==
+        lowercase_nav_item %}
+        <li class="active">
+          <a href="{{ nav_item[2] }}">{{ nav_item[0] }}</a>
+        </li>
+        {% else %}
+        <li><a href="{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
+        {% endif %} {% endfor %} {% endfor %}
+      </ul> -->
 
+<!-- <a href="{{ site.baseurl }}/" title="HOME"
+        ><img
+          src="{{ site.baseurl }}/logo.png"
+          alt="logo"
+          style="width: 150px; cursor: pointer; margin-top: 15px"
+      /></a> -->

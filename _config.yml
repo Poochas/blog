@@ -1,7 +1,7 @@
 # Site settings
-title: PhotoBlog
+title: Hobbitography
 email: ""
-description: "PhotoBlog"
+description: "Hobbitography"
 url: "https://poochas.github.io"
 baseurl: "/blog"
 #facebook_username: ""
@@ -15,7 +15,7 @@ share: false
 
 # Owner/author information
 owner:
-  name:   photorama
+  name:   hobbitography
   avatar: avatar.png
   favicon: favicon.ico
   info: photography website template

@@ -1,8 +1,8 @@
 ---
 layout: home
-main-title: "PhotoBlog"
-subtitle: ""
-description: "You get what you focus on, so focus on what you want"
+main-title: "Hobbitography"
+subtitle: "You get what you focus on, so focus on what you want"
+description: ""
 images:
  - image_path: /img/slider/home01.jpg
    gallery-folder: /img/slider/
@@ -19,9 +19,11 @@ images:
 
 <!-- CSS -->
      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=MedievalSharp&family=VT323&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=MedievalSharp&family=Tangerine:wght@400;700&family=VT323&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css" media="screen" />
-      <link rel="stylesheet" href="{{ site.baseurl }}/css/galleries.css" media="screen" />
-<link rel="stylesheet" href="{{ site.baseurl }}/css/WYSIWYG.css" media="screen" />
+     <link rel="stylesheet" href="{{ site.baseurl }}/css/galleries.css" media="screen" />
+     <link rel="stylesheet" href="{{ site.baseurl }}/css/WYSIWYG.css" media="screen" />
 
 
 
@@ -44,9 +46,9 @@ images:
 
 		<div class="position-absolute">
 				<h2 class="big no-margin"><strong><a id="main-title" href="https://poochas.github.io/blog/gallery/">{{ page.main-title }}</a></strong></h2>
-				<h2>{{ page.subtitle }}</h2> 
+				<h2 id="page-subtitle">{{ page.subtitle }}</h2> 
                      <div class="entry-summary">
-							<p>{{ page.description }}</p>
+							<p >{{ page.description }}</p>
 						</div><br />
 			</div>
 			
@@ -134,10 +136,11 @@ color:#dddddd; target="_blank" title="Email">
 		</ul>	
 	</div>
 
-  
+<!--BootStrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
 <!-- jQuery -->
   <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
 
   <script src="{{ site.baseurl }}/js/retina.min.js"></script> 
 
