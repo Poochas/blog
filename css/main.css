@@ -40,9 +40,7 @@ h6 {
   font-family: "Tangerine";
   font-weight: 700;
 }
-#navbar-custom {
-  background: none;
-}
+
 #navbar-custom a {
   color: #8b7d6e;
   transition: color 0.4s;
