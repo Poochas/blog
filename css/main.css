@@ -60,8 +60,12 @@ a:focus {
   outline: none;
   text-shadow: none;
 }
-#navbar-custom a:active {
-  color: #48ff00;
+#navbar-custom .active.nav-link {
+  color: #4e4137;
+  transition: color 0.3s;
+  outline: none;
+  text-shadow: none;
+  text-decoration: underline;
 }
 
 .intro-header {
