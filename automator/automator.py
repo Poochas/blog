@@ -63,12 +63,14 @@ def yaml_insert(abbr, archive_path, gallery_path, files, index, inputs):
 
             for i,line in enumerate(lineArr):
                 # Insert the images' yaml parts...
+                thumb = os.path.basename(thumbnailName)
+                thumb_name =  thumb[:thumb.index(".") + len(".")]+"webp"
                 if line.find("images:") != -1:
                     pos = i + 1
-                    lineArr.insert(pos, ' - image_path: /gallery/albums/' + os.path.basename(thumbnailName))
-                    lineArr.insert(pos+1, '   gallery-folder: ' + gallery_path[2:] + '/')
-                    lineArr.insert(pos+2, '   gallery-name: ' + inputs['thumbnailAbbrv'])
-                    lineArr.insert(pos+3, '   gallery-date: '+ inputs['date'])
+                    lineArr.insert(pos, '  - image_path: /gallery/albums/' + thumb_name)
+                    lineArr.insert(pos+1, '    gallery-folder: ' + gallery_path[2:] + '/')
+                    lineArr.insert(pos+2, '    gallery-name: ' + inputs['thumbnailAbbrv'])
+                    lineArr.insert(pos+3, '    gallery-date: '+ inputs['date'])
                     break
             fin.close()
 
