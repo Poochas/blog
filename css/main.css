@@ -104,6 +104,10 @@ hr.small {
   border-color: white;
 }
 
+.soc-icons li {
+  background-color: transparent;
+  border: none;
+}
 /* .intro-header {
   background: no-repeat center center;
   background-color: #808080;

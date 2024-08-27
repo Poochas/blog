@@ -148,7 +148,7 @@ em {
   font-style: italic;
 }
 a {
-  color: #ea8e00;
+  color: #dcd7c9;
   text-decoration: none;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -171,7 +171,7 @@ h6 a:hover {
 }
 a:hover {
   text-decoration: none;
-  color: #222;
+  color: #8b7d6e;
 }
 img {
   border: 0;
@@ -504,7 +504,7 @@ ul.soc-icons li a {
   text-decoration: none !important;
 }
 ul.soc-icons li a:hover i {
-  color: #000;
+  color: #8b7d6e;
   -moz-animation: spinHorizontal 0.5s linear;
   -o-animation: spinHorizontal 0.5s linear;
   -webkit-animation: spinHorizontal 0.5s linear;
