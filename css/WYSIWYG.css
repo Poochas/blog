@@ -503,7 +503,7 @@ ul.soc-icons li {
 ul.soc-icons li a {
   text-decoration: none !important;
 }
-ul.soc-icons li a:hover i {
+ul.soc-icons li a i:hover {
   color: #8b7d6e;
   -moz-animation: spinHorizontal 0.5s linear;
   -o-animation: spinHorizontal 0.5s linear;

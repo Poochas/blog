@@ -1,9 +1,9 @@
 <!-- Footer -->
 <footer>
   <div class="container">
-    <div class="row">
+    <div class="row soc-icons">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <ul class="list-group list-group-horizontal justify-content-center soc-icons">
+        <ul class="list-group list-group-horizontal justify-content-center">
           {% if site.facebook_username %}
           <li class="list-group-item">
             <a
@@ -12,8 +12,7 @@
               title="Facebook"
             >
               <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                <i class="fa-brands fa-facebook fa-stack-1x"></i>
               </span>
             </a>
           </li>
@@ -25,8 +24,7 @@
               title="Twitter"
             >
               <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                <i class="fa-brands fa-twitter fa-stack-1x"></i>
               </span>
             </a>
           </li>
@@ -38,8 +36,7 @@
               title="Instagram"
             >
               <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                <i class="fa-brands fa-instagram fa-stack-1x"></i>
               </span>
             </a>
           </li class="list-group-item">
@@ -51,8 +48,7 @@
               title="Flickr"
             >
               <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                <i class="fa-brands fa-flickr fa-stack-1x"></i>
               </span>
             </a>
           </li>
@@ -64,8 +60,7 @@
                 data-toggle="tooltip"
                 title="500px"
               >
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa-brands fa-500px fa-stack-1x fa-inverse"></i>
+              <i class="fa-brands fa-500px fa-stack-1x"></i>
               </span>
             </a>
           </li>
@@ -77,36 +72,19 @@
               title="Github"
             >
               <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
+                <i class="fa-brands fa-github fa-stack-1x"></i>
               </span>
             </a>
           </li>
           {% endif %}
-          
-          <!-- <li>
-    <a href="mailto:{{ site.email }}" data-toggle="tooltip" target="_blank" title="Email">
-                       <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-</span>
-          </a> </li>
 
-         <li>
-                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" data-toggle="tooltip" title="Feed">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li> -->
         </ul>
         <p class="copyright text-muted">
           Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
         </p>
         <center>
           <h6>
-            <p>Powered by <a href="https://github.com/jekyll/">Jekyll</a>.</p>
+            <p>Powered by <a href="https://github.com/jekyll/" class="text-muted">Jekyll</a>.</p>
           </h6>
         </center>
       </div>
