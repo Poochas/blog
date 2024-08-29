@@ -2,11 +2,7 @@
 title: Hobbitography
 email: ""
 description: "Hobbitography"
-<<<<<<< HEAD
-url: "http://hobbitography.ddns.net"
-=======
 url: "https://poochas.github.io"
->>>>>>> parent of 59cb849 (Update _config.yml)
 baseurl: "/blog"
 #facebook_username: ""
 #twitter_username: ""
@@ -37,11 +33,7 @@ comments :
 
 # Internal nav
 nav:
-<<<<<<< HEAD
-  - GALLERY: "http://hobbitography.ddns.net/blog/gallery/"  
-=======
   - GALLERY: "https://poochas.github.io/blog/gallery/"  
->>>>>>> parent of 59cb849 (Update _config.yml)
  # - JOURNAL: "https://poochas.github.io/photorama/journal/"
  # - ABOUT: "https://poochas.github.io/photorama/about/"
 
