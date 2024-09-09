@@ -22,13 +22,14 @@ images:
      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=MedievalSharp&family=VT323&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=MedievalSharp&family=Tangerine:wght@400;700&family=VT323&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" />
-     <link rel="stylesheet" href="{{ site.baseurl }}/css/galleries.css" media="screen" />
-     <link rel="stylesheet" href="{{ site.baseurl }}/css/WYSIWYG.css" media="screen" />
+     <link rel="stylesheet" href="/css/galleries.css" media="screen" />
+     <!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/WYSIWYG.css" media="screen" /> -->
+     <link rel="stylesheet" href="/css/WYSIWYG.css" media="screen" />
 
 
 
 	<!-- Modernizr -->
-  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+  <script src="/js/modernizr.js"></script>
 
 
 
@@ -45,7 +46,7 @@ images:
 			<!-- WYSIWYG -->
 
 		<div class="position-absolute">
-				<h2 class="big no-margin"><strong><a id="main-title" href="https://poochas.github.io/blog/gallery/">{{ page.main-title }}</a></strong></h2>
+				<h2 class="big no-margin"><strong><a id="main-title" href="{{ site.baseurl }}/blog/gallery/">{{ page.main-title }}</a></strong></h2>
 				<h2 id="page-subtitle">{{ page.subtitle }}</h2> 
                      <div class="entry-summary">
 							<p >{{ page.description }}</p>
@@ -61,8 +62,8 @@ images:
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+<a href="{{ image.gallery-folder }}">
+<img src="{{ image.image_path }}"></a>
 	
 				</header>	
 				</figure>
