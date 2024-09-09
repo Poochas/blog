@@ -11,7 +11,7 @@ github_username:  "Poochas"
 px_username: "Pucas"
 #flickr_username: ""
 #discus_shortname: ""
-share: false
+share: true
 
 # Owner/author information
 owner:
