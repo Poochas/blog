@@ -467,13 +467,12 @@ _____________________________________ */
 body.fullscreen #footer {
   position: absolute;
   display: block;
-  bottom: 10%;
-  padding-bottom: 3.5em;
+  top: 95%;
   right: 0;
   z-index: 3;
   color: white;
   text-align: right;
-  padding: 2em 4.5% 0;
+  padding: 2em 4.5% 3.5em;
 }
 
 #footer {
