@@ -467,7 +467,7 @@ _____________________________________ */
 body.fullscreen #footer {
   position: absolute;
   display: block;
-  top: 95%;
+  bottom: 0;
   right: 0;
   z-index: 3;
   color: white;
