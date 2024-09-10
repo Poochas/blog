@@ -8,12 +8,12 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.8em;
   font-weight: 400;
+  position: relative;
 }
 
 /* CONTENT */
 body #content {
   position: relative;
-  height: 100%;
 }
 body #content > .wrapper {
   padding: 3em 4.5% 0;
@@ -47,7 +47,7 @@ body.fullscreen ul.social-icons li a {
 
 body.fullscreen .position-absolute {
   color: #dddddd;
-  bottom: 50px;
+  bottom: 200px;
   left: 0;
   width: 100%;
   padding: 2% 4.5%; /*-webkit-transform: translateY(-50%);
