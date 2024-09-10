@@ -2,7 +2,7 @@
 title: Hobbitography
 email: ""
 description: "Hobbitography"
-url: "http://hobbitography.duckdns.org"
+url: "https://hobbitography.sytes.net"
 baseurl: ""
 #facebook_username: ""
 #twitter_username: ""
@@ -33,7 +33,7 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "http://hobbitography.duckdns.org/gallery/"  
+  - GALLERY: "https://hobbitography.sytes.net/gallery/"  
  # - JOURNAL: "https://poochas.github.io/photorama/journal/"
  # - ABOUT: "https://poochas.github.io/photorama/about/"
 
