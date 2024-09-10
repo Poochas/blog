@@ -46,7 +46,7 @@ body.fullscreen ul.social-icons li a {
 
 body.fullscreen .position-absolute {
   color: #dddddd;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   width: 100%;
   padding: 2% 4.5%; /*-webkit-transform: translateY(-50%);
