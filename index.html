@@ -18,110 +18,88 @@ images:
 	<meta content="charset=utf-8">
 
 <!-- CSS -->
-     <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=MedievalSharp&family=VT323&display=swap" rel="stylesheet">
+     <!-- <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=MedievalSharp&family=VT323&display=swap" rel="stylesheet"> -->
      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=MedievalSharp&family=Tangerine:wght@400;700&family=VT323&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" />
      <link rel="stylesheet" href="/css/galleries.css" media="screen" />
-     <!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/WYSIWYG.css" media="screen" /> -->
      <link rel="stylesheet" href="/css/WYSIWYG.css" media="screen" />
-
-
-
-	<!-- Modernizr -->
-  <script src="/js/modernizr.js"></script>
-
-
-
-  
+     <!-- Modernizr -->
+    <script src="/js/modernizr.js"></script>
 
 </head>
 
 <body class="fullscreen">
-
 <!-- MAIN CONTENT SECTION  _____________________________________________-->
 	<section id="content" role="main">
 		<div class="wrapper">
 
 			<!-- WYSIWYG -->
-
-		<div class="position-absolute">
+		  <div class="position-absolute">
 				<h2 class="big no-margin"><strong><a id="main-title" href="{{ site.url }}/gallery/">{{ page.main-title }}</a></strong></h2>
 				<h2 id="page-subtitle">{{ page.subtitle }}</h2> <br />
 			</div>
 			
 			<div class="gallery fullscreen-gallery kenburns-gallery">
-
 				<canvas id="kenburns"></canvas>
-				
-{% for image in page.images %}  	
-
+          {% for image in page.images %}  	
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
-
-<a href="{{ image.gallery-folder }}">
-<!-- <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a> -->
-  <img src="{{ image.image_path }}"></a>
-	
-				</header>	
+            <a href="{{ image.gallery-folder }}">
+            <img src="{{ image.image_path }}"></a>
+				  </header>	
 				</figure>
-
-{% endfor %}
-
-				</div>
+          {% endfor %}
+			</div>
 			<!-- END WYSIWYG -->
-			
-	
 		</div><!-- END .wrapper -->
-		
 	</section>
 
 <div id="footer" role="contentinfo">
 		<ul class="soc-icons">
-
-                 {% if site.facebook_username %}
+    {% if site.facebook_username %}
 			<li>
-   <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank" title="Facebook">
-                       <i class="fa fa-facebook"></i>
-                     </span>
-</a></li>
+        <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank" title="Facebook">
+        <i class="fa fa-facebook"></i>
+        </span></a>
+      </li>
     {% endif %}
- {% if site.twitter_username %}
+    {% if site.twitter_username %}
 			<li>
-   <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Twitter">
-                       <i class="fa fa-twitter"></i>
-                     </span>
-</a></li>
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Twitter">
+        <i class="fa fa-twitter"></i>
+        </span></a>
+      </li>
     {% endif %}
-                {% if site.instagram_username %}
+    {% if site.instagram_username %}
 			<li>
-   <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" title="Instagram">
-                       <i class="fa fa-instagram"></i>
-                     </span>
-</a></li>
+        <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" title="Instagram">
+        <i class="fa fa-instagram"></i>
+        </span></a>
+      </li>
     {% endif %}
-                    {% if site.flickr_username %}
-						<li>
-   <a href="https://flickr.com/photos/{{ site.flickr_username }}" target="_blank" title="Flickr">
-              <i class="fa-brands fa-flickr"></i>
-                     </span>
- </a></li>	
-     {% endif %}
-                    {% if site.px_username %}
+    {% if site.flickr_username %}
 			<li>
-   <a href="https://500px.com/p/{{site.px_username}}" target="_blank" title="500px">
-<i class="fa-brands fa-500px"></i> </span>
-</a></li>	
+        <a href="https://flickr.com/photos/{{ site.flickr_username }}" target="_blank" title="Flickr">
+        <i class="fa-brands fa-flickr"></i>
+        </span></a>
+      </li>	
     {% endif %}
-                    {% if site.github_username %}
-                <li>
-   <a href="https://github.com/{{ site.github_username }}" target="_blank" title="Github">
-              <i class="fa-brands fa-github"></i>
-                     </span>
-                   {% endif %}
-					
+    {% if site.px_username %}
+			<li>
+        <a href="https://500px.com/p/{{site.px_username}}" target="_blank" title="500px">
+        <i class="fa-brands fa-500px"></i>
+        </span></a>
+      </li>	
+    {% endif %}
+    {% if site.github_username %}
+      <li>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" title="Github">
+        <i class="fa-brands fa-github"></i>
+        </span></a>
+      </li>
+    {% endif %}
 		</ul>	
-	</div>
+</div>
 
 <!--BootStrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
@@ -141,6 +119,6 @@ images:
 <!-- include fontawesome icons -->
 <script src="https://kit.fontawesome.com/660f009052.js" crossorigin="anonymous"></script>
 
-       </body>
-    </html>
+</body>
+</html>
 
