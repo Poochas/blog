@@ -10,7 +10,10 @@ body {
   font-weight: 400;
   position: relative;
 }
-
+body div.mobileFix {
+  position: relative;
+  height: 100%;
+}
 /* CONTENT */
 body #content {
   position: relative;
