@@ -26,6 +26,7 @@ def confirm_dir():
         
 # Make the yaml insertions to the necessary files
 def yaml_insert(abbr, archive_path, gallery_path, files, index, inputs):
+    print(inputs)
     if(inputs):
         lineArr = []
         with open(gallery_path + '/index.html', "rt", encoding='utf-8')as fin:
@@ -164,13 +165,14 @@ def get_caption_and_index(indexFile):
 def add_to_existing(inputs):
     # Grab all the filenames from the selected directory
     img_files = next(os.walk(inputFolderName2), (None, None, []))[2]  # [] if no file
-
+    new_img = []
     # Compress the input images and put them in their correct dest directories
     for image in img_files:
         try:
             img_path = inputFolderName2 + '/' + image
             img = Image.open(img_path)
             image_name = image.split('.', 1)[0]
+            new_img.append(image_name + '.webp')  
             img.save(inputs['archiveName'] + '/' + image_name + '.webp', 'webp', optimize=True, quality=inputs['quality'])
         except:
             print('Error opening ' + image + ', dropping it from processing')
@@ -192,7 +194,7 @@ def add_to_existing(inputs):
                     gallery_path = '../gallery/' + folder
                     [abbrev, index] = get_caption_and_index(gallery_path + '/index.html')
                     index += 1
-                    yaml_insert(abbrev, archive_path, gallery_path, img_files, index, [])
+                    yaml_insert(abbrev, archive_path, gallery_path, new_img, index, [])
                     inserted = 1
         if not inserted:
             print("Make a valid selection.")
