@@ -26,7 +26,6 @@ def confirm_dir():
         
 # Make the yaml insertions to the necessary files
 def yaml_insert(abbr, archive_path, gallery_path, files, index, inputs):
-    print(inputs)
     if(inputs):
         lineArr = []
         with open(gallery_path + '/index.html', "rt", encoding='utf-8')as fin:
