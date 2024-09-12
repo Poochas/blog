@@ -2,7 +2,7 @@
 title: Hobbitography
 email: ""
 description: "Hobbitography"
-url: "hobbitography.lt/"
+url: "https://hobbitography.lt/"
 baseurl: ""
 #facebook_username: ""
 #twitter_username: ""
@@ -33,7 +33,7 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "hobbitography.lt/gallery/"  
+  - GALLERY: "https://hobbitography.lt/gallery/"  
  # - JOURNAL: "https://poochas.github.io/photorama/journal/"
  # - ABOUT: "https://poochas.github.io/photorama/about/"
 
